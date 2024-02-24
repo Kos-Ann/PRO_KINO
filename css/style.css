@@ -1,3 +1,106 @@
-body {
-  background-color: brown;
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
 }
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+}
+
+.header__logo {
+  width: 165px;
+  height: 36px;
+}
+
+.header__link {
+  border-radius: 52px;
+  width: 188px;
+  height: 50px;
+  background: var(--button-bg-active);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid transparent;
+  outline: none;
+  padding: 14px 18px;
+}
+
+.header__link:hover {
+  background-color: var(--button-bg-hover-active);
+}
+
+.header__link:focus {
+  background-color: var(--button-bg-hover-active);
+  border-color: var(--white);
+}
+
+.main {}
+
+.visually-hidden {}
+
+.hero {}
+
+.hero__container {}
+
+.hero__banner {}
+
+.hero__date {}
+
+.hero__arrow-down {}
+
+.circle-arrow-down {}
+
+.about {}
+
+.about__container {}
+
+.about__content {}
+
+.about__title {}
+
+.about__description {}
+
+.about__pic {}
+
+.about__image {}
+
+.trailers {}
+
+.trailers__buttons {}
+
+.trailers__item-button {}
+
+.trailers__button {}
+
+.trailers__list {}
+
+.trailers__item {}
+
+.trailers__wrapper {}
+
+.trailers__video {}
+
+.footer {}
+
+.footer__container {}
+
+.footer__developers {}
+
+.footer_developer {}
+
+.designer-link {}
+
+.developer-link {}
+
+.footer__copyright {}
+
+.footer__logo {}

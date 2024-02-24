@@ -1,0 +1,101 @@
+:root {
+  --font-size: 20px;
+  --font-size-s: 16px;
+  --main-bg: #000201;
+  --white: #ffffff;
+  --button-bg: #272928;
+  --button-bg-active: #FF3D00;
+  --button-bg-hover-active: #FF521B;
+  --button-arrow-bg-hover: #343434;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter/inter-v13-cyrillic_latin-regular.woff2), format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Inter/inter-v13-cyrillic_latin-600.woff2), format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: #00000000;
+  -webkit-tap-highlight-color: transparent;
+  font-size: var(--font-size);
+  line-height: 1.5;
+  color: var(--white);
+  background-color: var(--main-bg);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.container {
+  max-width: 1432px;
+  padding: 0 66px;
+  margin: 0 auto;
+}

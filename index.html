@@ -3,68 +3,59 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ПРО КИНО - Аватар: Легенда об Аанге</title>
-  <link rel="shortcut icon"
-        type="image/x-icon"
-        href="#">
-  <link href="./css/normalize.css"
-        rel="stylesheet">
-  <link href="./css/style.css"
-        rel="stylesheet">
-  <script defer
-          src="./js/main.js"></script>
+  <link rel="icon" href="./img/icon.png" type="image/png">
+  <link rel="icon" href="./img/icon.svg" type="image/svg+xml">
+  <link href="./css/normalize.css" rel="stylesheet">
+  <link href="./css/default.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <script defer src="./js/main.js"></script>
 </head>
 
 <body>
-  <h1 class="main__title"
-      hidden>ПРО КИНО - Аватар: Легенда об Аанге</h1>
   <header class="header">
     <div class="container header__container">
-      <img class="header__logo"
-           src="./img/logo.svg"
-           alt="логотип сайта ПРО КИНО">
-      <a class="header__link"
-         href="#trailers">Смотреть трейлер</a>
+      <img class="header__logo" src="./img/logo.svg" alt="логотип сайта ПРО КИНО">
+      <a class="header__link" href="#trailers">Смотреть трейлер</a>
     </div>
   </header>
 
   <main class="main">
+    <h1 class="visually-hidden">ПРО КИНО - Аватар: Легенда об Аанге</h1>
+
     <section class="hero">
       <div class="container hero__container">
-        <img class="hero__banner"
-             src="./img/banner.png"
-             alt="Avatar the last airbender">
+        <img class="hero__banner" src="./img/banner.png" alt="Avatar the last airbender">
         <p class="hero__date">
           <time datetime="2024-03-22">22 Февраля</time>
         </p>
-        <a class="hero__arrow-down"
-           href="#about">
-          <img class="circle-arrow-down"
-               src="./img/circle-arrow-down.svg"
-               alt="кнопка перехода на раздел описания сюжета фильма">
+        <a class="hero__arrow-down" href="#about">
+          <img class="circle-arrow-down" src="./img/circle-arrow-down.svg" alt="кнопка перехода на раздел описания сюжета фильма">
         </a>
       </div>
     </section>
     <section class="about">
       <div class="container about__container">
-        <h2 class="about__title">Аватар: Легенда об Аанге</h2>
-        <p class="about__description">
-          Сюжет рассказывает о мальчике из племени воздушных кочевников, Аанге, способном покорять стихию воздуха. В возрасте 11 лет, он узнал, что он Аватар — властелин четырёх стихий. Мир погряз в многолетней войне нации Огня против остального мира, в котором определённые люди способны покорять одну из четырёх стихий — воду, землю, огонь или воздух. Аанг — единственный, кто способен покорить все элементы и будучи Аватаром, он должен спасти мир от уничтожения нацией Огня. Со своими новыми друзьями, Катарой и Соккой, Аанг отправляется овладевать стихиями, попутно их преследует изгнанный принц нации Огня — Зуко, который хочет вернуть себе честь, поймав Аватара.
-        </p>
-        <img class="about__img"
-             src="./img/about-img.png"
-             alt="фоновая картинка">
+        <div class="about__content">
+          <h2 class="about__title">Аватар: Легенда об Аанге</h2>
+          <p class="about__description">
+            Сюжет рассказывает о мальчике из племени воздушных кочевников, Аанге, способном покорять стихию воздуха. В возрасте 11 лет, он узнал, что он Аватар — властелин четырёх стихий. Мир погряз в многолетней войне нации Огня против остального мира, в котором определённые люди способны покорять одну из четырёх стихий — воду, землю, огонь или воздух. Аанг — единственный, кто способен покорить все элементы и будучи Аватаром, он должен спасти мир от уничтожения нацией Огня. Со своими новыми друзьями, Катарой и Соккой, Аанг отправляется овладевать стихиями, попутно их преследует изгнанный принц нации Огня — Зуко, который хочет вернуть себе честь, поймав Аватара.
+          </p>
+        </div>
+        <picture class="about__pic">
+          <source media="(max-width: 320px)" srcset="./img/Aang320.jpg">
+          <source media="(max-width: 768px)" srcset="./img/Aang768.jpg">
+          <source media="(max-width: 1024px)" srcset="./img/Aang1024.jpg">
+          <img class="about__image" src="./img/Aang.jpg" alt="Аанг на Аппе">
+        </picture>
       </div>
     </section>
-    <section class="trailers"
-             id="#trailers">
+    <section class="trailers" id="#trailers">
       <div class="container">
         <ul class="trailers__buttons">
           <li class="trailers__item-button">
-            <button class="trailers__button"
-                    active>Трейлер 1</button>
+            <button class="trailers__button" active>Трейлер 1</button>
           </li>
           <li class="trailers__item-button">
             <button class="trailers__button">Трейлер 2</button>
@@ -77,10 +68,7 @@
         <ul class="trailers__list">
           <li class="trailers__item">
             <div class="trailers__wrapper">
-              <iframe class="trailers__video"
-                      src="https://www.youtube.com/embed/waJKJW_XU90?"
-                      title="YouTube video player"
-                      frameborder="0"></iframe>
+              <iframe class="trailers__video" src="https://www.youtube.com/embed/waJKJW_XU90?" title="YouTube video player" frameborder="0"></iframe>
             </div>
           </li>
         </ul>
@@ -92,18 +80,14 @@
     <div class="container footer__container">
       <ul class="footer__developers">
         <li class="footer_developer">
-          <a class="designer-link"
-             href="#">Designer: Anastasia Ilina</a>
+          <a class="designer-link" href="#">Designer: Anastasia Ilina</a>
         </li>
         <li class="footer_developer">
-          <a class="developer-link"
-             href="#">KosAnn</a>
+          <a class="developer-link" href="#">KosAnn</a>
         </li>
       </ul>
       <p class="footer__copyright">© ПРОКИНО, 2024</p>
-      <img class="footer__logo"
-           src="./img/logo.svg"
-           alt="Логотип ПРО КИНО">
+      <img class="footer__logo" src="./img/logo.svg" alt="Логотип ПРО КИНО">
     </div>
   </footer>
 </body>
