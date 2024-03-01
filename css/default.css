@@ -1,9 +1,9 @@
 :root {
-  --font-size: 20px;
-  --font-size-s: 16px;
+  scroll-behavior: smooth;
   --main-bg: #000201;
-  --white: #ffffff;
   --button-bg: #272928;
+  --footer-bg: #101010;
+  --white: #ffffff;
   --button-bg-active: #FF3D00;
   --button-bg-hover-active: #FF521B;
   --button-arrow-bg-hover: #343434;
@@ -41,7 +41,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: #00000000;
   -webkit-tap-highlight-color: transparent;
-  font-size: var(--font-size);
+  font-size: 16px;
   line-height: 1.5;
   color: var(--white);
   background-color: var(--main-bg);
