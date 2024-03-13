@@ -1,25 +1,11 @@
-.header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
+.container {
+  max-width: 1432px;
+  padding-left: 66px;
+  padding-right: 66px;
+  margin: 0 auto;
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.header__logo {
-  width: 165px;
-  height: 36px;
-}
-
-.header__link {
+.link-show-trailer {
   border-radius: 52px;
   width: 188px;
   height: 50px;
@@ -33,39 +19,64 @@
   padding: 14px 18px;
 }
 
-.header__link:hover {
+.link-show-trailer:hover {
   background-color: var(--button-bg-hover-active);
 }
 
-.header__link:focus {
+.link-show-trailer:focus {
   background-color: var(--button-bg-hover-active);
   border-color: var(--white);
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 165px;
+  height: 36px;
+}
+
+.header__link {
+  display: block;
 }
 
 .hero {
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 33vw;
+  /* background-size: cover; */
+  padding-top: 25vw;
   padding-bottom: 60px;
-  background-image:
-  linear-gradient(
-    180.00deg,
-    rgba(0, 0, 0, 0) 52.716%,
-    rgba(0, 0, 0, 0.76) 65.309%
-  ),
-  image-set(
-    url('../img/hero-bg@x2.webp') type('image/webp') 2x,
-    url('../img/hero-bg.webp') type('image/webp'),
-    url('../img/hero-bg@x2.jpg') 2x,
-    url('../img/hero-bg.jpg')
-  );
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 52.716%,
+      rgba(0, 0, 0, 0.76) 65.309%
+    ),
+    image-set(
+      url("../img/hero-bg@x2.webp") type("image/webp") 2x,
+      url("../img/hero-bg.webp") type("image/webp"),
+      url("../img/hero-bg@x2.jpg") 2x,
+      url("../img/hero-bg.jpg")
+    );
 }
 
 .hero__container {
   display: flex;
   flex-direction: column;
-  align-items: center;justify-content: end;
+  align-items: center;
+  justify-content: end;
 }
 
 .hero__banner {
@@ -74,17 +85,17 @@
 }
 
 .hero__date {
-font-weight: 600;
-font-size: 40px;
-text-transform: uppercase;
-text-align: center;
-color: var(--button-bg-active);
-margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--button-bg-active);
+  margin-bottom: 16px;
 }
 
-.hero__arrow-down {}
-
-.circle-arrow-down {}
+.hero__link {
+  display: none;
+}
 
 .about {
   padding: 60px 0;
@@ -110,7 +121,7 @@ margin-bottom: 16px;
 }
 
 .about__container::after {
-  content: '';
+  content: "";
   flex-basis: 530px;
   background-image: url("../img/Aang.jpg");
   background-image: -webkit-image-set(
@@ -120,7 +131,7 @@ margin-bottom: 16px;
     url("../img/Aang.webp") type("image/webp") 1x,
     url("../img/Aang@2x.jpg") 2x,
     url("../img/Aang.jpg") 1x
-    );
+  );
   background-image: image-set(
     url("../img/Aang@2x.avif") type("image/avif") 2x,
     url("../img/Aang.avif") type("image/avif") 1x,
@@ -128,7 +139,7 @@ margin-bottom: 16px;
     url("../img/Aang.webp") type("image/webp") 1x,
     url("../img/Aang@2x.jpg") 2x,
     url("../img/Aang.jpg") 1x
-    );
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -220,7 +231,7 @@ trailers__button:active {
   align-self: end;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .about__container::after {
     flex-basis: 436px;
     background-image: url("../img/Aang1024.jpg");
@@ -243,7 +254,17 @@ trailers__button:active {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .container {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .about__container {
     flex-direction: column;
   }
@@ -274,7 +295,7 @@ trailers__button:active {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 560px) {
   .about__container::after {
     flex-basis: 288px;
     background-image: url("../img/Aang320.jpg");

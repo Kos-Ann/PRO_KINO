@@ -4,17 +4,18 @@
   --button-bg: #272928;
   --footer-bg: #101010;
   --white: #ffffff;
-  --button-bg-active: #FF3D00;
-  --button-bg-hover-active: #FF521B;
+  --button-bg-active: #ff3d00;
+  --button-bg-hover-active: #ff521b;
   --button-arrow-bg-hover: #343434;
 }
 
 @font-face {
   font-family: Inter;
-  src: url(../fonts/Inter/inter-v13-cyrillic_latin-regular.woff2), format('woff2');
+  src: url(../fonts/Inter/inter-v13-cyrillic_latin-regular.woff2),
+    format("woff2");
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/Inter/inter-v13-cyrillic_latin-600.woff2), format('woff2');
+  src: url(../fonts/Inter/inter-v13-cyrillic_latin-600.woff2), format("woff2");
   font-weight: 600;
   font-display: swap;
 }
@@ -92,10 +93,4 @@ iframe {
 .visually-hidden {
   position: fixed;
   transform: scale(0);
-}
-
-.container {
-  max-width: 1432px;
-  padding: 0 66px;
-  margin: 0 auto;
 }
