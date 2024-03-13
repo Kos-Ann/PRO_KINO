@@ -4,6 +4,7 @@
   --button-bg: #272928;
   --footer-bg: #101010;
   --white: #ffffff;
+  --black: #000000;
   --button-bg-active: #ff3d00;
   --button-bg-hover-active: #ff521b;
   --button-arrow-bg-hover: #343434;
@@ -11,11 +12,10 @@
 
 @font-face {
   font-family: Inter;
-  src: url(../fonts/Inter/inter-v13-cyrillic_latin-regular.woff2),
-    format("woff2");
+  src: url(../fonts/Inter/inter-400.woff2), format("woff2");
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/Inter/inter-v13-cyrillic_latin-600.woff2), format("woff2");
+  src: url(../fonts/Inter/inter-600.woff2), format("woff2");
   font-weight: 600;
   font-display: swap;
 }
@@ -36,13 +36,15 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
+  min-height: 100dvh;
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  -webkit-tap-highlight-color: #00000000;
+  -webkit-tap-highlight-color: var(--black);
   -webkit-tap-highlight-color: transparent;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   color: var(--white);
   background-color: var(--main-bg);
